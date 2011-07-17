@@ -8,7 +8,7 @@ Github Repository: https://github.com/Implemint/Mint-Grid
 
 Mint Grid is a slightly modified version of the [1140 CSS Grid](http://cssgrid.net/) by [Andy Taylor](http://andytly.com/). I liked this grid system as it's percentage based, and responsive, but there were a couple of things that I felt could have been done differently.
 
-I utilize [headjs](http://headjs.com/) in nearly every project I work on, so for me to use this grid, I found it necessary to modify it to use headjs. This allows for html5 support in dated browsers, polyfill classes which have been applied for the responsive widths, so you can use them rather than @media queries to modify your responsive layouts. As well as loading your javascript like images to reduce page loading speed.
+I utilize [headjs](http://headjs.com/) in nearly every project I work on, so for me to use this grid, I found it necessary to modify it to use headjs. This allows for html5 support in dated browsers, polyfill classes which have been applied for the responsive widths and IE fixes, so you can use them rather than @media queries to modify your responsive layouts or separate stylesheets to fix IE. As well as loading your javascript like images to reduce page loading speed.
 
 I've also added in the ability to add padding to your grid columns. By default, the padding is set to 20 pixels, but can easily be modified in the `1104.css` file. Simply add the class `.padding` to your column element to get it to work.
 
