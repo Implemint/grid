@@ -32,14 +32,14 @@ I've also added in the ability to add padding to your grid columns. By default, 
     </div>
 
 ## Explanation of the classes and markup
-`.container`
+    .container
 Is a full width div that allows layouts to have a background that spans the full width of the browser. It also contains 20px padding on either side to keep content away from the edges when it becomes fluid. You can just use one big container, or use multiple to break the page horizontally.
 
-`.row`
+    .row
 Is a row of columns. It centres them and defines the 1140px max-width.
 
-`.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol`
+    .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol
 Are the classes for each column. They can be used in any combination within a row that adds up to twelve or less.
 
-`.last`
+    .last
 The last column within a row also needs this class. It removes the right margin so all the columns fit within the row.

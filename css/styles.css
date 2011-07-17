@@ -1,29 +1,20 @@
 /* ============================== */
-/* ! Layout for desktop version   */
+/* ! Layout for desktop version                   */
 /* ============================== */
-
-	body {
-		
-	}
+body {
 	
+}	
 
 /* ============================= */
-/* ! Layout for mobile version   */
+/* ! Layout for mobile version                   */
 /* ============================= */
-
-@media handheld, only screen and (max-width: 767px) {
-
-	body {
-		
-	}
+.lt-768 body {
 
 }
 
-
 /* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
+/* ! Provide higher res assets for iPhone 4                          */
 /* ========================================== */
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
 
 /*	.logo {

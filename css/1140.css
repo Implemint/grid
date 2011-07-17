@@ -56,6 +56,8 @@ img, object, embed { max-width: 100% }
 
 img { height: auto }
 
+.row .padding { padding: 20px }
+
 /* Smaller screens */
 .lt-1024 body {
 	font-size: .8em;
