@@ -1,0 +1,83 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+
+/* ==================================================================================================================== */
+/* Based on the 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://twitter.com/andytlr \ http://andytlr.com                                                                */
+/* ==================================================================================================================== */
+
+.container { padding: 0 20px }
+
+.row {
+	width: 100%; max-width: 1140px; min-width: 707px;
+	margin: 0 auto;
+}
+/* Using clearfix instead of overflow: hidden, More consistent and it won't hid box-shadows, or any content that might need to break out of the row */
+.row:before, .row:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.row:after { clear: both }
+.lt-ie8 .row { zoom: 1 }
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+	margin-right: 3.8%;
+	float: left;
+	min-height: 1px;
+}
+
+/* Column Widths */
+.row .onecol { width: 4.85% }
+.row .twocol { width: 13.45% }
+.row .threecol { width: 22.05% }
+.row .fourcol { width: 30.75% }
+.row .fivecol { width: 39.45% }
+.row .sixcol { width: 48% }
+.row .sevencol { width: 56.75% }
+.row .eightcol { width: 65.4% }
+.row .ninecol { width: 74.05% }
+.row .tencol { width: 82.7% }
+.row .elevencol { width: 91.35% }
+
+/* For old IE versions */
+.lt-ie9 .onecol { width: 4.7% }
+.lt-ie9 .twocol { width: 13.2% }
+.lt-ie9 .threecol { width: 22.05% }
+.lt-ie9 .fourcol { width: 30.6% }
+.lt-ie9 .fivecol { width: 39% }
+.lt-ie9 .sixcol { width: 48% }
+.lt-ie9 .sevencol { width: 56.75% }
+.lt-ie9 .eightcol { width: 61.6% }
+.lt-ie9 .ninecol { width: 74.05% }
+.lt-ie9 .tencol { width: 82% }
+.lt-ie9 .elevencol { width: 91.35% }
+
+.last { margin-right: 0 }
+
+img, object, embed { max-width: 100% }
+
+img { height: auto }
+
+/* Smaller screens */
+.lt-1024 body {
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+/* Mobile */
+.lt-768 body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+}
+.lt-768 .row, .lt-768 body, .lt-768 .container {
+	width: 100%; min-width: 0;
+	margin-left: 0; margin-right: 0;
+	padding-left: 0; padding-right: 0;
+}
+.lt-768 .row .onecol, .lt-768 .row .twocol, .lt-768 .row .threecol,
+.lt-768 .row .fourcol, .lt-768 .row .fivecol, .lt-768 .row .sixcol,
+.lt-768 .row .sevencol, .lt-768 .row .eightcol, .lt-768 .row .ninecol,
+.lt-768 .row .tencol, .lt-768 .row .elevencol {
+	width: auto;
+	float: none;
+	margin-left: 0; margin-right: 0;
+	padding-left: 20px; padding-right: 20px;
+}
